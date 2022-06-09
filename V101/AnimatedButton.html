@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+var posX = 389;
+var posY = 350;
+var step = 10;
+var direction = "right";
+var stopBtn = false;
+function initLayer()
+{
+	//window.alert("Hi");	
+	var animLayer = document.getElementById("apDiv1");
+	var animBtn= document.getElementById("anim_btn");
+	//window.alert(animLayer);
+	animLayer.style.left= posX + "px"
+		animLayer.style.top= posY + "px"
+	//	window.alert(animBtn);
+		animBtn.style.width="120px";
+
+	var animLayer = document.getElementById("apDiv1");
+	var leftPos = animLayer.style.left;
+	var intLeftPos = parseInt(leftPos);
+	
+		intLeftPos += step;
+		animLayer.style.left = intLeftPos + "px";
+		animLayer.style.left = intLeftPos + "px";
+		animLayer.style.left = intLeftPos + "px";
+}
+function hideLayer()
+{
+	var animLayer = document.getElementById("apDiv1");
+	animLayer.style.visibility = "hidden";
+}
+function showLayer()
+{
+	var animLayer = document.getElementById("apDiv1");
+	animLayer.style.visibility = "visible";
+}
+function moveLeft()
+{
+	var animLayer = document.getElementById("apDiv1");
+	var leftPos = animLayer.style.left;
+	var intLeftPos = parseInt(leftPos);
+		intLeftPos -= step;
+		animLayer.style.left = intLeftPos + "px";
+}
+function moveRight()
+{
+	var i = 0;
+	 while ( i < 10)
+	{
+	var animLayer = document.getElementById("apDiv1");
+	var leftPos = animLayer.style.left;
+	var intLeftPos = parseInt(leftPos);
+	
+		intLeftPos += step;
+		animLayer.style.left = intLeftPos + "px";
+		 i++;
+	}
+}
+function moveUp()
+{
+var animLayer = document.getElementByID("apDiv1");
+var upPos = animLayer.style.top;
+var intUpPos = parseInt(upPos);
+	intUpPos -= step;
+	animLayer.style.top = intUpPos + "px";
+}
+function moveContinuous()
+{
+var i = 0
+
+while (i < 10)
+{
+	
+	
+	var animLayer = document.getElementById("apDiv1");
+	var animBtn = document.getElementById("anim_btn");
+	var animBtnWidth = animBtn.style.width;
+	var animWidthInt= parseInt(animBtnWidth);
+	var leftPos = animLayer.style.left;
+	var intLeftPos = parseInt(leftPos);
+		
+		
+
+			intLeftPos += step;
+				
+		animLayer.style.left = intLeftPos + "px";
+	
+		
+		
+	}
+}
+function reset()
+{
+}
+</script>
+
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:680px;
+	top:178px;
+	width:104px;
+	height:23px;
+	z-index:1;
+}
+
+#apDiv2 {
+	position:absolute;
+	left:286px;
+	top:89px;
+	width:585px;
+	height:29px;
+	z-index:2;
+}
+#apDiv3 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:3;
+}
+#apDiv4 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:3;
+}
+</style>
+</head>
+
+<body onLoad="initLayer()">
+<div id="apDiv1">
+ 
+  <input onClick="this.style.visibility="hidden" id="anim_btn" type="button" name="anim"   value="AnimatedButton" />
+ 
+</div>
+<div id="apDiv2" align="center">
+  <p>
+    <input onclick="hideLayer()" type="button"  value="Hide" /> 
+     <input OnClick="showLayer()" type="button"  value="Show" />
+    &nbsp;
+<input type="button" OnClick="moveLeft()"  value="Left" />
+  &nbsp;
+  <input type="button" OnClick="moveRight()"  value="Right" />
+  &nbsp;
+   <input type="button" OnClick="moveUp()"  value="Up" />
+  &nbsp;
+  <input type="button" onClick="moveDown()" value="Down" />
+  &nbsp;
+  <input type="button" OnClick="moveContinuous()"  value="Move" /> 
+  &nbsp;
+   <input type="button" onclick="stopBtn=true;"  value="Stop" />
+  &nbsp;
+  <input type="button" onclick="initLayer()"  value="Reset" />
+  &nbsp;  
+  <input type="button" onclick="()"  value="Resume" />
+  </p>
+</div>
+&nbsp;&nbsp; 
+<h1 align="center">Animated Button</h1>
+
+<p align="center">&nbsp;</p>
+
+</body>
+</html>

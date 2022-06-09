@@ -1,0 +1,28 @@
+.navbar-inner{
+background-color:663300
+}
+
+html {
+    min-height: 100%
+}
+body{  background-image:linear-gradient(#cc6600,#FF7F50,#cc6600)}
+.navbar-default{bottom: 0;}
+H1{color:#ffffff; text-align:center}
+H2{color:#ffffff; text-align:center}
+H3{color:#ffffff; text-align:center}
+H4{color:#ffffff; text-align:center}
+H5{color:#ffffff; text-align:center}
+H6{color:#ffffff; text-align:center}
+a{color:#cc3333}
+p{color:#0084b4; text-align:center}
+.navbar-default {
+ border-bottom: 1px solid transparent;
+ }
+ .tsum{text-align:center;}
+ span.tab{
+    padding: 0 80px;
+}
+ li{text-align:center}
+ .icon-large.icon-twitter {
+background-position: -276px -748px;
+}

@@ -1,0 +1,13 @@
+Responsible for all accounts receivable.
+
+Responsible for all procedures of locking and opening up the Synagogue.
+
+Responsible for recruiting for a weekly class including contacting all particapants and obtaining a roster before each class.
+
+Responsible for entering membership data as soon as it comes in whether via sign in email or through pysical documents.
+
+Responsible for data integrity by looking up all campaigns to check if all the data is current.
+
+Responsible for fundraising calls and incoming calls. 
+
+
